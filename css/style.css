@@ -1,0 +1,11 @@
+body{
+    margin: 25px 100px;
+    font-family: system-ui,sans-serif;
+    color: #333;
+    background: #f1f1f1;
+    gap: 51px;
+}
+
+#erro{
+    color: red;
+}
