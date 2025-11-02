@@ -1,0 +1,28 @@
+Simulando filas de ATM
+Nome:
+Idade:
+Condições especias
+Possui alguma deficiência ou condição de saúde que afete sua mobilidade?
+Estará acompanhado (a) de uma criança com idade menor ou igual a 3 anos?
+
+
+Se idade for maior ou igual a 50 anos fila de prioridade
+Se idade for maior ou igual a 16 e menos que 50 anos fila normal
+Se idade for menor que 50 anos e estiver acompanhado de uma criança fila de prioridade
+Se tiver um deficiencia fila de Alta prioridade
+
+Modo de espera:
+Na fila de prioridade: sai uma pessoa a cada três pessoas na fila normal!
+Na fila de alta prioridade: sai uma pessoa a cada duas pessoas na fila normal!
+A fila de prioridade só é criada se a fila norma estiver com 2 pessoas
+A fila de alta prioridade só é criada se a fila normal estiver com uma pessoa
+
+Efeito: 
+Exibir as possições de pessoas na fila de prioridade se estivessem na fila normal
+Exibiri as possições de pessoas na fila de alta prioridade se estivessem na fila normal
+
+A fila normal deve permitir o Proprietario trocar a sua possição com alguem que já esta na Fila (ex: o ultimo pode se tornar o terceiro trocando a posição com o terceito e vice versa). 
+
+Blocar atualizar dados, como nome, isso é visto como batotoda: 
+Buttoão para aculumular pedido extra (alem de seu processo o proprietário do lugar
+pode aceitar pedido exta, a um numero limite 3);

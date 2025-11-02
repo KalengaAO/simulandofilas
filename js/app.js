@@ -31,15 +31,18 @@ function gerenciarListas()
         }, 8000)
         return ;
     }
-    if (idade >= 50)
-        Filaprioridade(nome, idade,);
-    else if (idade )
-
+    if (idade >= 50 || (idade <= 50 && crianca))
+        Filaprioridade(nome, idade, crianca);
+    else if (idade >= 16 && idade <= 50)
+        Filanormal(idade, nome)
+    else if (idade >= 16 && debil)
+        Filadebil(idade, nome, debil)
+    render();
 }
 
-function Filaprioridade(idade, nome)
+function Filaprioridade(idade, nome, crianca)
 {
-    const fila = {"idade": idade, "nome":nome}
+    const fila = {"idade": idade, "nome":nome, "crianca": crianca}
     setCache(fila);
 
 }
@@ -56,9 +59,9 @@ function Filadebil(idade, nome, debil)
     setCache(fila);
 }
 
-function render(fila)
+function render()
 {
-
+    const file = getCache();
 }
 
 button.addEventListener('click', gerenciarListas);
