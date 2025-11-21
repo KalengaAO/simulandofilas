@@ -77,7 +77,7 @@ function criarCardPessoa(pessoa, posicao, tipo) {
     return div;
 }
 
-function calcularPosicaoReal(tipo, index, filas) {
+function calcularPosicaoReal(tipo, index) {
     if (tipo === 'prioridade') {
         return (index + 1) * 3 + 1;
     }
@@ -105,13 +105,13 @@ function render() {
     });
 
 filas.fprioridade.forEach((pessoa, index) => {
-    const posicaoReal = calcularPosicaoReal('prioridade', index, filas);
+    const posicaoReal = calcularPosicaoReal('prioridade', index);
     const el = criarCardPessoa(pessoa, posicaoReal, 'prioridade');
     prioridadeDiv.appendChild(el);
 });
 
 filas.falta.forEach((pessoa, index) => {
-    const posicaoReal = calcularPosicaoReal('alta', index, filas);
+    const posicaoReal = calcularPosicaoReal('alta', index);
     const el = criarCardPessoa(pessoa, posicaoReal, 'alta');
     altaDiv.appendChild(el);
 });
